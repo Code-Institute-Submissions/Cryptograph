@@ -1,0 +1,89 @@
+body, html {
+    width:100vw;
+    height:100vh;
+}
+.bg-signin {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+}
+.btn-landing {
+    font-family: cy, sans-serif;
+    color: #ffffff;
+    font-size: 2vw;
+}
+.corp-title {
+    font-family: cy, sans-serif;
+    color: #ffffff;
+    font-size: 8vw;
+    margin-top: 1
+    0%;
+}
+.corp-statement {
+    font-family: cy, sans-serif;
+    color: #ffffff;
+    font-size: 4vw;
+    margin-top:10%;
+}
+.view {
+    width:100vw;
+    height:100%;
+    background-image: url(../assets/images/crypto_landing.svg); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center;
+}
+
+/*--------Sign In/Sign Up-------*/
+.form-signin {
+    font-family: cy, sans-serif;
+    width:100%;
+    max-width: 330px;
+    padding:15px;
+    margin: auto;   
+}
+.img {
+    vertical-align: middle;
+    border-style: none;
+}
+.btn-primary {
+    background-color: #18bdcc;
+    border: 1px solid #343879;
+    font-weight: 600;
+}
+
+/*--------Media Queries-------*/
+@media (max-width: 768px) {
+    .view {
+        background-image: url("../images/crypto_land_md.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+   /*--------Fonts-------*/
+   Cy Light {
+font-family: cy, sans-serif;
+font-weight: 300;
+font-style: normal;
+   }
+
+
+Cy SemiLight {
+font-family: cy, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+Cy SemiBold {
+font-family: cy, sans-serif;
+font-weight: 600;
+font-style: normal;
+}
+
+Cy Bold {
+font-family: cy, sans-serif;
+font-weight: 700;
+font-style: normal;
+}
