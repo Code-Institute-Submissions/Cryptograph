@@ -1,6 +1,5 @@
 const data = d3.csv("assets/data/Binance_BTC.csv").then(function(data) {
 
-
 //Used to interegate date 
 function print_filter(filter) {
 var f=eval(filter);
@@ -13,6 +12,7 @@ console.log(filter+"("+f.length+") = "+JSON.stringify(f).replace("[","[\n\t").re
 var formatData = data.forEach(function(d){
     var tempDate = new Date(d.Date);
     d.Date = tempDate;
+    console.log(tempDate);
 });
 
 //Create a crossfilter object
@@ -40,8 +40,8 @@ var coinOverview = dc.lineChart("#data")
                     .renderHorizontalGridLines(true)
                     .useViewBoxResizing(true);
                     dc.renderAll();
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+//var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+//var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 var dataTable = dc.dataTable("#table")
                 .width(400)
@@ -63,5 +63,6 @@ var dataTable = dc.dataTable("#table")
                 });
 
                 dc.renderAll();
+
 
 });//End const data
