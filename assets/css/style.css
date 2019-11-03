@@ -1,6 +1,7 @@
-body, html {
-    width:100vw;
-    height:100vh;
+div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .bg-signin {
     display: flex;
@@ -13,26 +14,37 @@ body, html {
     font-family: cy, sans-serif;
     color: #ffffff;
     font-size: 2vw;
+    margin-top: 20vh;
+}
+button.btn.btn-primary.ml-5, 
+button.btn.btn-primary.ml-3,
+button.btn.btn-primary {
+    color: #ffffff;
+    background-color: rgb(97, 197, 243);
+    border-color: #ffffff;
+    font-weight: SemiBold;
 }
 .corp-title {
-    font-family: cy, sans-serif;
+    font-family: Cy, sans-serif;
+    font-weight: SemiLight;
+    font-size: 15vh;
     color: #ffffff;
-    font-size: 8vw;
-    margin-top: 1
-    0%;
+    background: rgba(0, 0, 0, 0);
 }
 .corp-statement {
-    font-family: cy, sans-serif;
+    font-family: Cy, sans-serif;
+    font-weight: SemiLight;
+    font-size: 5vh;
     color: #ffffff;
-    font-size: 4vw;
     margin-top:10%;
+    background: rgba(0, 0, 0, 0);
 }
 .view {
-    width:100vw;
-    height:100%;
-    background-image: url(../assets/images/crypto_landing.svg); 
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/crypto_landing.svg"); 
     background-repeat: no-repeat; 
-    background-size: cover; 
+    background-size: cover;
     background-position: center center;
 }
 
@@ -48,40 +60,73 @@ body, html {
     vertical-align: middle;
     border-style: none;
 }
-.btn-primary {
-    background-color: #18bdcc;
-    border: 1px solid #343879;
-    font-weight: 600;
+/*------Dashboard------------*/
+.navbar {
+    background-color: #343779;
 }
-
+span.navbar-text, .nav-link {
+    font-family: cy, sans-serif;
+    font-size: 2vh;
+    color: #ffffff;
+}
+h1, h3, table{
+    font-family: cy, sans-serif;
+}
 /*--------Media Queries-------*/
-@media (max-width: 768px) {
+@media screen and (max-width: 1330px) {
     .view {
-        background-image: url("../images/crypto_land_md.svg");
-        background-repeat: no-repeat;
-        background-position: center;
+        background-image: url(../images/crypto_land_md.svg);
+    }
+    .corp-title {
+        font-size: 8vh;
+    }
+    .corp-statement{
+        font-size: 3vh;
+    }
+}
+@media screen and (max-width: 768px) {
+    .view {
+        background-image: url(../images/crypto_land_md.svg);
+    }
+    .corp-title {
+        font-size: 6vh;
+    }
+    .corp-statement{
+        font-size: 3vh;
+    }
+}
+@media screen and (max-width: 470px) {
+    .view {
+        background-image: url(../images/crypto_land_md.svg);
+    }
+    .corp-title {
+        font-size: 4.5vh;
+    }
+    .corp-statement{
+        font-size: 2.5vh;
+    }
+    button.btn.btn-primary.ml-5, 
+    button.btn.btn-primary.ml-3,
+    button.btn.btn-primary {
+       font-size: 1.5vh;
     }
 }
    /*--------Fonts-------*/
-   Cy Light {
+Cy Light {
 font-family: cy, sans-serif;
 font-weight: 300;
 font-style: normal;
    }
-
-
 Cy SemiLight {
 font-family: cy, sans-serif;
 font-weight: 400;
 font-style: normal;
 }
-
 Cy SemiBold {
 font-family: cy, sans-serif;
 font-weight: 600;
 font-style: normal;
 }
-
 Cy Bold {
 font-family: cy, sans-serif;
 font-weight: 700;
