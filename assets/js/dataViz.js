@@ -117,7 +117,8 @@ var volHighScatter = dc.scatterPlot('#volHighScatter')
                     .xAxisLabel("Volume of BTC traded/unit coin")
                     .yAxisLabel("Intraday High Value/$ per coin")
                     .renderHorizontalGridLines(true)
-                    .useViewBoxResizing(true);
+                    .useViewBoxResizing(true)
+                    .symbol(d3.symbolTriangle);
 
                     volHighScatter.xAxis().ticks(6);
                     dc.renderAll();
