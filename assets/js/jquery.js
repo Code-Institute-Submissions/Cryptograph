@@ -14,7 +14,7 @@ var intro = new Anno([{
   },{
     target  : '#tradeVolume',
     position: 'center-bottom',
-    content : "This shows the volume of BTC coins traded over time.<br><br>Selecting a date range in the Price Overview graph translates directly to this chart too! "
+    content : "This shows the volume of BTC coins traded over time.<br><br>Selecting a date range in the Price Overview graph translates directly to this chart too!"
   }, {
     target  : '#profit',
     position: 'right',
