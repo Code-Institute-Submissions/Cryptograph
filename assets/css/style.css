@@ -69,8 +69,11 @@ span.navbar-text, .nav-link {
     font-size: 2vh;
     color: #ffffff;
 }
-h1, h3, table{
+h1, h2, h3, table{
     font-family: cy, sans-serif;
+}
+.table {
+    width: 100%;
 }
 /*--------Media Queries-------*/
 @media screen and (max-width: 1330px) {
