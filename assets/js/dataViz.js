@@ -1,4 +1,4 @@
-const data = d3.csv("assets/data/Binance_BTC.csv").then(function(data) {
+const data = d3.csv("assets/data/Binance_BTC_2.csv").then(function(data) {
 
 //Used to interegate date 
 function print_filter(filter) {
@@ -59,7 +59,7 @@ var dataTable = dc.dataTable("#table")
                 .group(function(d){ return d;})
                 .showGroups(false)
                 .order(d3.descending)
-                .size(5)
+                .size(7)
                 .columns([{label:'Date', format:function(d){
                     return d.Date.toDateString();}}, 
                         'Open', 

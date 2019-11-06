@@ -52,6 +52,11 @@ The user is presented with the following information:
 |                           |
 | User defined data         |A table showing the current data stored by the user
 |                           |
-| Volume of BTC traded      |A graph showing volume of traded BTC per day versus time.<br><br>This is linked directly to the Overview of BTC chart.<>
+| Volume of BTC traded      |A graph showing volume of traded BTC per day versus time.<br><br>This is linked directly to the Overview of BTC chart<br>
+|                           |where the user can select a specific date range.
 |                           |
-|                           |
+|Trading Focus              |A 'monthly' imaginary service where analysis of certain aspects<br>of the specific coins trading performance is considered.<br>
+|                           |In this example, a Scatter Plot is offered examining the relationship<br> of BTC value vs. BTC traded volume.<br><br>
+|                           |This chart is interactive for the user to select an area of data points.<br>All respective graphs on the dashboard will display    |                           |the associated data points.
+
+Data for the 
