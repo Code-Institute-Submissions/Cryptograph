@@ -42,16 +42,16 @@ The user is presented with the following information:
 
 | Feature                   | Description                    
 |---------------------------|--------------------
-| Guided Tour               |Interactive popovers guide the user though the <br>dashboard highlighting the various features.
+| Guided Tour               |Interactive popovers guide the user though the <br>dashboard highlighting the various features.<br>This is linked to the volume    |                           |chart such that<br>when a time frame is selected, the volume chart simultaneously changes.
 |                           |
-| Overview of BTC coin      |Graph showing BTC value against time. Data being supplied by a `.csv` file.
+| Overview of BTC coin      |Graph showing BTC value against time. Data being<br>supplied by a `.csv` file.
 |                           |
-| BTC Quick Stats           |A data table with the previous 7 days trader info including,<br> the Open, Close, High and Low values reached of the respective coin
+| BTC Quick Stats           |A data table with the previous 7 days trader info including,<br>the daily Open, Close, High and Low values reached.
 |                           |
-| Profit vs time graph      |
-|
-| User defined data
-|
-| Volume of BTC traded
-|
-| 
+| Profit vs time graph      |Taking the users assumed and previously submitted data<br>a graph showing profit versus time since purchase is displayed.
+|                           |
+| User defined data         |A table showing the current data stored by the user
+|                           |
+| Volume of BTC traded      |A graph showing volume of traded BTC per day versus time.<br><br>This is linked directly to the Overview of BTC chart.<>
+|                           |
+|                           |
