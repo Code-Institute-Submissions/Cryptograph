@@ -24,6 +24,10 @@ button.btn.btn-primary {
     border-color: #ffffff;
     font-weight: SemiBold;
 }
+.btn {
+    font-family: cy, sans-serif;
+    color: #ffffff;
+}
 .corp-title {
     font-family: Cy, sans-serif;
     font-weight: SemiLight;

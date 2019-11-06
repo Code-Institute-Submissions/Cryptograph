@@ -33,9 +33,9 @@ $(document).ready(function() {
     intro.show();
     });
 
-  $('volHighScatter').bind('mouseenter', function(e){
-    
-  })
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
 
     
 });
