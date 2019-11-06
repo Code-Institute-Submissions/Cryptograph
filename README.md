@@ -1,4 +1,4 @@
-# CRYPTOGRAPH ![alt text](https://github.com/Peggy535/Cryptograph/blob/master/assets/images/Logo.svg") - Wayne Pegg Milestone 2 submission - Code Institute/Full Stack Web Developer
+# CRYPTOGRAPH ![alt text](https://github.com/Peggy535/Cryptograph/blob/master/assets/images/Logo.svg?sanitize=true) - Wayne Pegg Milestone 2 submission - Code Institute/Full Stack Web Developer
 
 CRYPTOGraph/CRYPTOGraphy is my submission for one of my 5 assessment projects for the above mentioned course.
 
