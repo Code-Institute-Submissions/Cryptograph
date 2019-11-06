@@ -33,7 +33,7 @@
         </span>
         <ul class="navbar-nav px-3">
             <li class="navbar-item nav-link mx-auto">   
-              <button type="button" class="btn btn-primary ml-3">Guided-tour</button>   
+              <button id="tour" type="button" class="btn btn-primary ml-3">Guided-tour</button>   
             </li>
             <li class="navbar-item text-nowrap d-inline mx-auto">
                 <a class="nav-link text-light" href="index.html">
@@ -102,8 +102,11 @@
             <h2 class="text-center">Trading Focus: Is there a relationship between daily trading volume and daily high?</h2>
             <section>This month we talk about....., sit amet consectetur adipisicing elit. Fugit consequuntur deserunt soluta aut, eius, repellendus odio esse maxime hic rem dolorem rerum molestias? Assumenda labore perferendis, soluta nihil officiis delectus.</section>
           </div>
-          <div class="col-xl-6">
-              <h2 class="text-center"></h2>
+          <div class="col-xl-6 text-center">
+              <h2 class="text-center">Scatter Plot showing the relationship of BTC volume to BTC value</h2>
+              <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Select an area of data points and see the corresponding data on all your other charts!">
+                Popover on top
+              </button>
               <div id="volHighScatter"></div>
             </div>
         </div>

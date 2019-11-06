@@ -29,10 +29,13 @@ var intro = new Anno([{
 
 
 $(document).ready(function() {
-          $('#tour').on('click', function(e){
-            
-            intro.show();
-            });
+  $('#tour').on('click', function(e){
+    intro.show();
+    });
 
-    //anno2.show();
+  $('volHighScatter').bind('mouseenter', function(e){
+    
+  })
+
+    
 });

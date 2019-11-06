@@ -118,7 +118,8 @@ var volHighScatter = dc.scatterPlot('#volHighScatter')
                     .yAxisLabel("Intraday High Value/$ per coin")
                     .renderHorizontalGridLines(true)
                     .useViewBoxResizing(true)
-                    .symbol(d3.symbolTriangle);
+                    .symbol(d3.symbolTriangle)
+                    .colors(d3.interpolatePlasma(0.8));
 
                     volHighScatter.xAxis().ticks(6);
                     dc.renderAll();
