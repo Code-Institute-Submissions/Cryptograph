@@ -6,7 +6,7 @@ However, since starting this project and having researched into this area, there
 
 This site is currently published on the following link:
 
-[CRYPTOGraphy](https://peggy535.github.io/Cryptography)
+[CRYPTOGraphy](https://peggy535.github.io/Cryptograph/)
 
 ## Conception
 
