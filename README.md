@@ -1,4 +1,4 @@
-# CRYPTOGRAPH ![alt text](https://github.com/Peggy535/Cryptograph/blob/master/assets/images/Logo.svg?sanitize=true) - Wayne Pegg Milestone 2 submission - Code Institute/Full Stack Web Developer
+# CRYPTOGRAPH - Wayne Pegg Milestone 2 submission - Code Institute/Full Stack Web Developer
 
 CRYPTOGraph/CRYPTOGraphy is my submission for one of my 5 assessment projects for the above mentioned course.
 
@@ -6,9 +6,7 @@ However, since starting this project and having researched into this area, there
 
 This site is currently published on the following link:
 
-```bash
-[CRYPTOGraphy] (https://peggy535.github.io/Cryptography)
-```
+[CRYPTOGraphy](https://peggy535.github.io/Cryptography)
 
 ## Conception
 
@@ -23,24 +21,37 @@ The purpose of this project is straight-forward. Provide a user-friendly, simple
 
 "I'm the holder of 1 BTC that I purchased on the 1st April 2018 for $4000. My profit target is 350% ROI. I want a dashboard has information that is bias towards my desires! That is, when my assets reach 350% ROI"
 
-```bash
-pip install foobar
-```
 
-## Usage
+## UX Design
 
-```python
-import foobar
+The main emphasise for this was to ensure simplicity for the investor whilst ensuring the data that is considered important to the users needs is presented in an effective and easily-identifiable manner.
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
+Two landing images (SVG) were created for the Desktop vs. Table/Mobile responsive designs respectively using Adobe Illustrator.
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+A The user is then presented with two options, to sign-in or sign-up. These screens were simply created for realism, they do not authenticate the user input although the email is evidently validated as per the Bootstrap specs.
 
-Please make sure to update tests as appropriate.
+The dashboard is then presented. For this project, it is assumed the user has already an open account and has entered their respective assets information which would include such information as; Coin, number of assets, purchase date, purchase value of coin, ROI percentage, methods of notification etc...
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+The graphs/data were presented in such a fashion that all elements are responsive to the viewport size.
+
+The wireframes constructed by Adobe XD are presented in the following directory [Please click here to view these](https://github.com/Peggy535/Cryptograph/tree/master/assets/Wireframes)
+
+## Features of the dashboard
+
+The user is presented with the following information:
+
+| Feature                   | Description                    
+|---------------------------|--------------------
+| Guided Tour               |Interactive popovers guide the user though the <br>dashboard highlighting the various features.
+|                           |
+| Overview of BTC coin      |Graph showing BTC value against time. Data being supplied by a `.csv` file.
+|                           |
+| BTC Quick Stats           |A data table with the previous 7 days trader info including,<br> the Open, Close, High and Low values reached of the respective coin
+|                           |
+| Profit vs time graph      |
+|
+| User defined data
+|
+| Volume of BTC traded
+|
+| 
