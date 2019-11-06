@@ -1,16 +1,16 @@
 var intro = new Anno([{
     target  : '#data', 
     position: 'top-center',
-    content : 'This gives you an overview of the price of BTC over time.<br><br>You can select a date range!'
+    content : 'This gives you an overview of the price of BTC over time.<br><br>You can select a date range by clicking and dragging your mouse!'
   }, {
     target  : '.table',
     position: 'left',
-    content : "The data table here shows you the previous 5 days quick stats. All values are shown in $ USD dollars",
+    content : "The data table here shows you the previous 7 days quick stats. All values are shown in $ US dollars",
   },{
     target  : '#profitData',
     position: 'right',
     className: 'anno-width-200', // 150,175,200,250 (default 300)
-    content : 'The most important Chart!<br><br>Your profit levels over time!!'
+    content : 'The most important Chart!<br><br>Your percentage profit levels over time!!'
   },{
     target  : '#tradeVolume',
     position: 'center-bottom',
