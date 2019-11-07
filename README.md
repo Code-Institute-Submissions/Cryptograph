@@ -2,7 +2,7 @@
 
 CRYPTOGraph/CRYPTOGraphy is my submission for one of my 5 assessment projects for the above mentioned course.
 
-However, since starting this project and having researched into this area, there is also a possible and future business product that will be discussed breifly later in the file.
+However, since starting this project and having researched into this area, there is also a possible use-case/business product that will be discussed breifly later in this file.
 
 This site is currently published on the following link:
 
@@ -10,7 +10,7 @@ This site is currently published on the following link:
 
 ## Conception
 
-Having a avid interest in Cryptocurrency, Options trading and Data Analytics, I was drawn to this option for my milestone 2 project.
+Having an avid interest in Cryptocurrency, Options Trading and Data Analytics, I was drawn to this option for my milestone 2 project.
 
 Having used several different trading platforms, I understand that it can take some time for the user to comprehend and fully appreciate how the respective
 dashboards function. I have also experienced frustration in what I term, 'negative investor friendly functionality'. As an investor, I have one sole objective ultimately, to make profit as easily as possible. I don't neccesarily want to have to use mathematics to calculate the Return on Investment (ROI)
@@ -54,10 +54,10 @@ The user is presented with the following information:
 |                           |
 | Volume of BTC traded      |A graph showing volume of traded BTC per day versus time.<br>This is linked directly to the Overview of BTC chart<br>where the user can select a specific date range.
 |                           |
-| Trading Focus             |A 'monthly' imaginary service where analysis of certain aspects<br>of the specific coins trading performance is considered.<br>
-In this example, a Scatter Plot is offered examining the relationship<br> of BTC value vs. BTC traded volume.<br>This chart is interactive for the user to select an area of data points.<br>All respective graphs on the dashboard will display the associated data points.
+| Trading Focus             |A 'monthly' imaginary service where analysis of certain aspects<br>of the specific coins trading performance is considered.<br>In this example, a Scatter Plot is offered examining the relationship<br> of BTC value vs. BTC traded volume.<br>This chart is interactive for the user to select an area of data points.<br>All respective graphs on the dashboard will display the associated data points.
+|                           |
 
-Data for the project was provided from a free service (Crypto Datadownload)[http://www.cryptodatadownload.com/]. From this site I simply downloaded a csv file that is used within the project. In this case `assets/data/Binance_BTC_2.csv`.
+Data for the project was provided from a free service [Crypto Datadownload](http://www.cryptodatadownload.com/). From this site I simply downloaded a csv file that is used within the project. In this case `assets/data/Binance_BTC_2.csv`.
 
 ## Features of the dashboard
 
@@ -65,8 +65,20 @@ Some of the possible future features include:
 
 1. Development of an asset input page. Security would have to be considered as it would mean having access to an individuals exchange account details.
 
-2. Connection to a live-feed of data. API's such as [CoinAPI.io](https://www.coinapi.io/), [CryptoAPIs](https://cryptoapis.io/) and an intersting aspect of data analytics that is becoming increasingly used, that being market-sentiment based on social media posts and other media platforms. A great platform for data can be found at [santiment.net](https://santiment.net/).
+2. Connection to a live-feed of data. API's such as [CoinAPI.io](https://www.coinapi.io/), [CryptoAPIs](https://cryptoapis.io/) and an interesting aspect of data analytics that is becoming increasingly used and relied upon, that being market-sentiment based on social media posts and other media platforms/activity. A great platform for this data can be found at [santiment.net](https://santiment.net/).
 
 3. Correct implementation of user sign-in and sign-up account page.
 
 4. Implementation of several forms of communication for notification. Ideally, this would mean the implementation of an API micro-service such as Twilio.
+
+5. Development of the service into a PWA with the integration of and utilization of Gatsby, Netlify and React.js.
+
+6. Formulate and develop the service into a paid subscription service.
+
+## Technologies used
+
+The project has made use of the following technologies;
+
+HTML5, CSS3, Bootstrap 4, Javascript, JQuery, D3.js, DC.js and Crossfilter.
+
+Further to this, [anno.js by Dan Fox](http://iamdanfox.github.io/anno.js/) was employed to provide the user an interacive tour of the dashboard.
