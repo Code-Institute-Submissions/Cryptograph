@@ -55,8 +55,20 @@ The user is presented with the following information:
 | Volume of BTC traded      |A graph showing volume of traded BTC per day versus time.<br>This is linked directly to the Overview of BTC chart<br>
 |                           |where the user can select a specific date range.
 |                           |
-|Trading Focus              |A 'monthly' imaginary service where analysis of certain aspects<br>of the specific coins trading performance is considered.<br>
+| Trading Focus             |A 'monthly' imaginary service where analysis of certain aspects<br>of the specific coins trading performance is considered.<br>
 |                           |In this example, a Scatter Plot is offered examining the relationship<br> of BTC value vs. BTC traded volume.<br>
 |                           |This chart is interactive for the user to select an area of data points.<br>All respective graphs on the dashboard will display    |                           |the associated data points.
 
-Data for the 
+Data for the project was provided from a free service (Crypto Datadownload)[http://www.cryptodatadownload.com/]. From this site I simply downloaded a csv file that is used within the project. In this case `assets/data/Binance_BTC_2.csv`.
+
+## Features of the dashboard
+
+Some of the possible future features include:
+
+1. Development of an asset input page. Security would have to be considered as it would mean having access to an individuals exchange account details.
+
+2. Connection to a live-feed of data. API's such as (CoinAPI.io)[https://www.coinapi.io/], (CryptoAPIs)[https://cryptoapis.io/] and an intersting aspect of data analytics that is becoming increasingly used, that being market-sentiment based on social media posts and other media platforms. A great platform for data can be found at (santiment.net)[https://santiment.net/].
+
+3. Correct implementation of user sign-in and sign-up account page.
+
+4. Implementation of several forms of communication for notification. Ideally, this would mean the implementation of an API micro-service such as Twilio.
