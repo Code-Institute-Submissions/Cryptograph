@@ -136,4 +136,10 @@ Testing for this project was conducted in the 'shoes' of an actual user. That is
 - The x and y-axis were checked to ensure the corect range of values were reflected.
 - Several different areas of data were selected. I ensured the associated data points from the Scatter Plot were reflected on all three charts accordingly. 
 
+## Deployment
 
+This project was saved the following repository on [Github Cryptograph](https://github.com/Peggy535/Cryptograph).
+
+There were not differences within configuration files nor any branches constructed.
+
+The projects site was deployed to the following, [click here](https://peggy535.github.io/Cryptograph/).
