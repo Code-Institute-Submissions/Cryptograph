@@ -8,7 +8,7 @@ This site is currently published on the following link:
 
 [CRYPTOGraphy](https://peggy535.github.io/Cryptograph/)
 
-This dashboard application has been built with to be responsive to any device type. Please also note, the signin and signup pages were not built to be functional. They were simply added to the project for a 'realism' factor.
+This dashboard application has been built to be responsive to, and for any device type. Please also note, the signin and signup pages were not built to be functional. They were simply added to this project for a 'realism' factor.
 
 ## Conception
 
@@ -90,14 +90,50 @@ Further to this, [anno.js by Dan Fox](http://iamdanfox.github.io/anno.js/) was e
 Testing for this project was conducted in the 'shoes' of an actual user. That is, all possible options and scenario's were completed as detailed below:
 
 1) Landing page
-..* Ensured the image, font size and sign-in/sign out buttons were rendered correctly for all responsive device types and orientations
+
+- Ensured the image, font size and sign-in/sign out buttons were rendered correctly for all responsive device types and orientations
 
 2) Dashboard Guided-Tour
-..* Ensured that the guided tour is functional on all device viewport sizes. Position of the tour messages were viewable no matter what device or orientation of screen. This was accomplished using Google Dev tools and running through the guided tour for all screen sizes and orientations
+
+- Ensured that the guided tour is functional on all device viewport sizes. Position of the tour messages were viewable no matter what device or orientation of screen. This was accomplished using Google Dev tools and running through the guided tour for all screen sizes and orientations
 
 3) Sign Out button
-..* The link was tested to ensure that no matter what device type, when this component was clicked, the correct landing page was rendered correctly.
+
+- The link was tested to ensure that no matter what device type, when this component was clicked, the correct landing page was rendered correctly.
 
 4) Overview of Coin: BTC
-..* The 
+
+- The graph was reviewed ensuring the correct date range and value's had been published from the `.csv` file. Several highs and low's were choosen and the value inspected to ensure the data had been plotted as should be expected.
+- The chart was checked to ensure responsive design, reviewing all screen sizes and orientations via Google Dev tools.
+-This chart was built to allow a time selection filter to be applied. This was checked several times for use ensuring this functioned correctly. This chart was also checked against the Trading Volume chart, to ensure that the Trading Volume data represented on the Trading Vlume chart was exactly reflective of the date range choosen on the Overview of Coin Chart.
+- Further to this, when the selected date range was deselected from the Overviw of Coin chart, this was also directly rendered and actioned on the Trading Volumer chart
+
+5) BTC Quick Stats table
+
+- The date table was checked to ensure that the data being displayed was correct as per the data on and from the `.csv` file. It was also checked to ensure the 'previous' 7 days of data was displated. It was assume, for this specific reason, that yesterdays date was the 5th November 2019.
+
+6) Overviw of Profits 
+
+- Firstly, the chart was checked ensuring that the correct 'user-defined' date-range had been displayed correctly. This being from 1st April 2018 to the present time. 
+- Several high's and lows were choosen from the chart to ensure that the correct percentage of profits, both +ve and -ve were reflected in the graph. As can be seen, the profits became slightly negative during the approximate period of NOv/Dec 2018 to April 2019. These results were checked such that the calculations were performed from the raw data using basic mathematics.
+- The live guide lines were checked for functionality by hovering the mouse over the graphical line ensuring the correct levels were reflected on the x and y-axis for the value being hovered over
+
+7) Profit Factors
+
+- This was a 'made-up table of user data. This was checked for correct rendering and responsive behaviour.
+
+8) Trading Volume
+
+- The graph was reviewed ensuring the correct date range and value's had been published from the `.csv` file. Several data points were choosen and the value inspected to ensure the data had been plotted as should be expected.
+- The chart was checked to ensure responsive design, reviewing all screen sizes and orientations via Google Dev tools.
+
+9) Trading Focus and Scatter Plot
+
+- Correct formatting and rendering for the text area was ensured as well as responsive behaviour for all screen sizes.
+- The Scatter Plot was firstly checked to ensure correct rendering and responsive behaviour
+- Several data points were choosen of various different values ensuring that these values were reflected correctly as per the raw data.
+- The 'Click for a tip!' button was correctly fucntioning for all screen sizes and displayed the intended and correct text.
+- The x and y-axis were checked to ensure the corect range of values were reflected.
+- Several different areas of data were selected. I ensured the associated data points from the Scatter Plot were reflected on all three charts accordingly. 
+
 
