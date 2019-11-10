@@ -16,10 +16,8 @@ var formatData = data.forEach(function(d){
     });
 
 //User-defined data
-const numOfBTC = 1;
-const dateOfPurchase = new Date("2018-04-01");
 const costPerCoin = 4000; //Amount per coin in $
-const roiTarget = 350; //Target profit level - 350% ROI of initial value
+const dateOfPurchase = new Date("2018-04-01");
 
 //Create a crossfilter object
 var ndx = crossfilter(data);
@@ -35,8 +33,10 @@ var profitDateDimension = dateDimension.filterRange([dateOfPurchase, maxDate]);
 var profitGroup = profitDateDimension.group().reduceSum(function(d){
                     return Math.floor( ((d.High - costPerCoin) / costPerCoin)  * 100 )});
 
-var scatterDimension = ndx.dimension(function(d){ return[d.Volume_BTC, d.High];});
-var scatterGroup = scatterDimension.group();
+
+var scatterDimension = ndx.dimension(function(d){ return[d.Volume_BTC,d.High];});
+var scatterGroup = scatterDimension.group().reduceSum(function(d){return d.Date;});
+
 
 var coinOverview = dc.lineChart("#data")
                     .width(1200)
@@ -50,7 +50,6 @@ var coinOverview = dc.lineChart("#data")
                     .colors("#1c9099")
                     .renderHorizontalGridLines(true)
                     .useViewBoxResizing(true);
-                    dc.renderAll();
 
 var dataTable = dc.dataTable("#table")
                 .width(500)
@@ -68,8 +67,6 @@ var dataTable = dc.dataTable("#table")
                         'Low'])
                 .useViewBoxResizing(true);
 
-                dc.renderAll();
-
 var profitGraph = dc.lineChart('#profitData')
                     .height(300)
                     .width(500)
@@ -86,7 +83,6 @@ var profitGraph = dc.lineChart('#profitData')
                     .useViewBoxResizing(true);
     
                     profitGraph.xAxis().ticks(4);
-                    dc.renderAll();
 
 var volGraph = dc.barChart("#tradeVolume")
                     .height(300)
@@ -103,8 +99,6 @@ var volGraph = dc.barChart("#tradeVolume")
                     .useViewBoxResizing(true);
 
                     volGraph.xAxis().ticks(4);
-                    
-                    dc.renderAll();
 
 var volHighScatter = dc.scatterPlot('#volHighScatter')
                     .height(600)
@@ -119,10 +113,13 @@ var volHighScatter = dc.scatterPlot('#volHighScatter')
                     .renderHorizontalGridLines(true)
                     .useViewBoxResizing(true)
                     .symbol(d3.symbolTriangle)
-                    .colors(d3.interpolatePlasma(0.8));
+                    .symbolSize(5)
+                    .colors(d3.interpolatePlasma(0.8))
+                    .excludedOpacity(0.9);
 
                     volHighScatter.xAxis().ticks(6);
+                    
                     dc.renderAll();
-                    print_filter(scatterGroup);
+print_filter('scatterGroup');
 
 });//End const data
