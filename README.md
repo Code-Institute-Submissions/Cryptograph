@@ -12,16 +12,16 @@ This dashboard application has been built to be responsive to, and for any devic
 
 ## Conception
 
-Having an avid interest in Cryptocurrency, Options Trading and Data Analytics, I was drawn to this option for my milestone 2 project.
+Having an avid interest in Cryptocurrency, Options Trading and Data Analytics, I was drawn to this option for my Milestone 2 project with Code Institute.
 
 Having used several different trading platforms, I understand that it can take some time for the user to comprehend and fully appreciate how the respective
-dashboards function. I have also experienced frustration in what I term, 'negative investor friendly functionality'. As an investor, I have one sole objective ultimately, to make profit as easily as possible. I don't neccesarily want to have to use mathematics to calculate the Return on Investment (ROI)
+dashboards function. I have also experienced frustration in what I term, 'negative investor friendly functionality'. As an investor, I have one sole objective ultimately, to make profit as easily as possible. I don't neccesarily want to have to use mathematics to calculate the exact coin value for a specific Return on Investment (ROI).
 
 Another important function which appears to be lacking in current software and trading platforms is a lack of effective and efficient notification. I have experienced, many times, late notifications or none at all when assets have hit or reached certain profit targets. As you can imagine, this is extremely frustrating!
 
-The purpose of this project is straight-forward. Provide a user-friendly, simple and information-rich dashboard that portrays the information I wish to have as an investor of a Crypto Currency asset. In this case, Bitcoin (BTC). Ultimately, as an investor, I will have and set a specific ROI. For this example, I have assumed the following:
+The purpose of this project is straight forward. Provide a user-friendly, simple and information-rich dashboard that portrays the information I wish to have as an investor of a Crypto Currency asset. In this case, Bitcoin (BTC). Ultimately, as an investor, I will have and set a specific ROI. For this example, I have assumed the following:
 
-"I'm the holder of 1 BTC that I purchased on the 1st April 2018 for $4000. My profit target is 350% ROI. I want a dashboard has information that is bias towards my desires! That is, when my assets reach 350% ROI"
+"I'm the holder of 1 BTC that I purchased on the 1st April 2018 for $4000. My profit target is 350% ROI. I want a dashboard that portrays this information."
 
 
 ## UX Design
@@ -30,9 +30,9 @@ The main emphasise for this was to ensure simplicity for the investor whilst ens
 
 Two landing images (SVG) were created for the Desktop vs. Table/Mobile responsive designs respectively using Adobe Illustrator.
 
-A The user is then presented with two options, to sign-in or sign-up. These screens were simply created for realism, they do not authenticate the user input although the email is evidently validated as per the Bootstrap specs.
+The user is then presented with two options, to sign-in or sign-up. These screens were simply created for realism, they do not authenticate the user input.
 
-The dashboard is then presented. For this project, it is assumed the user has already an open account and has entered their respective assets information which would include such information as; Coin, number of assets, purchase date, purchase value of coin, ROI percentage, methods of notification etc...
+The dashboard is then presented. For this project, it is assumed the user has already an open account and has entered their respective asset information which would include such information as; Coin, number of assets, purchase date, purchase value of coin, ROI percentage required, methods of notification etc...
 
 The graphs/data were presented in such a fashion that all elements are responsive to the viewport size.
 
@@ -44,7 +44,7 @@ The user is presented with the following information:
 
 | Feature                   | Description                    
 |---------------------------|--------------------
-| Guided Tour               |Interactive popovers guide the user though the <br>dashboard highlighting the various features.<br>This is linked to the volume    |                           |chart such that<br>when a time frame is selected, the volume chart simultaneously changes.
+| Guided Tour               |Interactive popups guide the user though the <br>dashboard highlighting the various features.<br>This is linked to the volume    |                           |chart such that<br>when a time frame is selected, the volume chart simultaneously changes.
 |                           |
 | Overview of BTC coin      |Graph showing BTC value against time. Data being<br>supplied by a `.csv` file.
 |                           |
@@ -59,7 +59,7 @@ The user is presented with the following information:
 | Trading Focus             |A 'monthly' imaginary service where analysis of certain aspects<br>of the specific coins trading performance is considered.<br>In this example, a Scatter Plot is offered examining the relationship<br> of BTC value vs. BTC traded volume.<br>This chart is interactive for the user to select an area of data points.<br>All respective graphs on the dashboard will display the associated data points.
 |                           |
 
-Data for the project was provided from a free service [Crypto Datadownload](http://www.cryptodatadownload.com/). From this site I simply downloaded a csv file that is used within the project. In this case `assets/data/Binance_BTC_2.csv`.
+Data for the project was provided from a free service [Crypto Datadownload](http://www.cryptodatadownload.com/). From this site, I simply downloaded a csv file that is used within the project. In this case `assets/data/Binance_BTC_2.csv`.
 
 ## Features of the dashboard
 
@@ -69,7 +69,7 @@ Some of the possible future features include:
 
 2. Connection to a live-feed of data. API's such as [CoinAPI.io](https://www.coinapi.io/), [CryptoAPIs](https://cryptoapis.io/) and an interesting aspect of data analytics that is becoming increasingly used and relied upon, that being market-sentiment based on social media posts and other media platforms/activity. A great platform for this data can be found at [santiment.net](https://santiment.net/).
 
-3. Correct implementation of user sign-in and sign-up account page.
+3. Correct implementation of user sign-in and sign-up account page with authentication and validation.
 
 4. Implementation of several forms of communication for notification. Ideally, this would mean the implementation of an API micro-service such as Twilio.
 
@@ -105,14 +105,14 @@ Testing for this project was conducted in the 'shoes' of an actual user. That is
 
 - The graph was reviewed ensuring the correct date range and value's had been published from the `.csv` file. Several highs and low's were choosen and the value inspected to ensure the data had been plotted as should be expected.
 - The chart was checked to ensure responsive design, reviewing all screen sizes and orientations via Google Dev tools.
--This chart was built to allow a time selection filter to be applied. This was checked several times for use ensuring this functioned correctly. This chart was also checked against the Trading Volume chart, to ensure that the Trading Volume data represented on the Trading Vlume chart was exactly reflective of the date range choosen on the Overview of Coin Chart.
-- Further to this, when the selected date range was deselected from the Overviw of Coin chart, this was also directly rendered and actioned on the Trading Volumer chart
+- This chart was built to allow a time selection filter to be applied. This was checked several times for use ensuring this functioned correctly. This chart was also checked against the Trading Volume chart, to ensure that the Trading Volume data represented on the Trading Volume chart was exactly reflective of the date range choosen on the Overview of Coin Chart.
+- Further to this, when the selected date range was deselected from the Overview of Coin chart, this was also directly rendered and actioned on the Trading Volume chart
 
 5) BTC Quick Stats table
 
-- The date table was checked to ensure that the data being displayed was correct as per the data on and from the `.csv` file. It was also checked to ensure the 'previous' 7 days of data was displated. It was assume, for this specific reason, that yesterdays date was the 5th November 2019.
+- The date table was checked to ensure that the data being displayed was correct as per the data on and from the `.csv` file. It was also checked to ensure the 'previous' 7 days of data was displayed. It was assumed, for this specific reason, that yesterday's date was the 5th November 2019.
 
-6) Overviw of Profits 
+6) Overview of Profits 
 
 - Firstly, the chart was checked ensuring that the correct 'user-defined' date-range had been displayed correctly. This being from 1st April 2018 to the present time. 
 - Several high's and lows were choosen from the chart to ensure that the correct percentage of profits, both +ve and -ve were reflected in the graph. As can be seen, the profits became slightly negative during the approximate period of NOv/Dec 2018 to April 2019. These results were checked such that the calculations were performed from the raw data using basic mathematics.
@@ -138,8 +138,19 @@ Testing for this project was conducted in the 'shoes' of an actual user. That is
 
 ## Deployment
 
-This project was saved the following repository on [Github Cryptograph](https://github.com/Peggy535/Cryptograph).
+This project was saved the following repository on [Github Peggy535/Cryptograph](https://github.com/Peggy535/Cryptograph).
 
 There were not differences within configuration files nor any branches constructed.
 
-The projects site was deployed to the following, [click here](https://peggy535.github.io/Cryptograph/).
+The projects site was deployed to the following site address, [click here](https://peggy535.github.io/Cryptograph/).
+
+## Credits
+
+Content
+
+- Thanks and acknowledgment is given to [Cryptodatadownload.com](http://www.cryptodatadownload.com/) for their excellent `.csv` data files used in this project.
+- dc.js, d3.js and crossfilter communities for the content and API documentation references on Github.
+
+Acknowledgements
+
+- A huge thanks for the supportive, encouring and positive input my tutor, Spencer, has had into this project. He has been a great help and really inspired my efforts. Sincere thanks Spencer.
