@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/epn7nnb.css");
+
 div {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -80,44 +82,64 @@ h1, h2, h3, table{
     width: 100%;
 }
 /*--------Media Queries-------*/
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 576px) {
     .view {
         background-image: url(../images/crypto_land_md.svg);
     }
     .corp-title {
-        font-size: 8vh;
+        font-size: 5vh
     }
     .corp-statement{
-        font-size: 3vh;
+        font-size: 3.5vh;
     }
-}
-@media screen and (max-width: 768px) {
-    .view {
-        background-image: url(../images/crypto_land_md.svg);
-    }
-    .corp-title {
-        font-size: 6vh;
-    }
-    .corp-statement{
-        font-size: 3vh;
-    }
-}
-@media screen and (max-width: 470px) {
-    .view {
-        background-image: url(../images/crypto_land_md.svg);
-    }
-    .corp-title {
-        font-size: 4.5vh;
-    }
-    .corp-statement{
-        font-size: 2.5vh;
-    }
-    button.btn.btn-primary.ml-5, 
     button.btn.btn-primary.ml-3,
     button.btn.btn-primary {
-       font-size: 1.5vh;
+       font-size: 2vh;
+    }
+    .table-stats {
+        font-size: 1.5vh;
     }
 }
+@media screen and (min-width: 577px) {
+    .view {
+        background-image: url(../images/crypto_land_md.svg);
+    }
+    .corp-title {
+        font-size: 9vh;
+    }
+    .corp-statement{
+        font-size: 4vh;
+    }
+    
+}
+@media (min-width: 991px) {
+    .view {
+        background-image: url(../images/crypto_land_md.svg);
+    }
+    .corp-title {
+        font-size: 9.4vh;
+    }
+    .corp-statement{
+        font-size: 3.5vh;
+    }
+    button.btn.btn-primary.ml-3,
+    button.btn.btn-primary {
+       font-size: 1.8vh;
+    }
+}
+@media screen and (min-width: 1330px) {
+    .view {
+        background-image: url(../images/crypto_land_md.svg);
+    }
+    .corp-title {
+        font-size: 15vh;
+    }
+    .corp-statement{
+        font-size: 5vh;
+    }
+}
+
+
    /*--------Fonts-------*/
 Cy Light {
 font-family: cy, sans-serif;

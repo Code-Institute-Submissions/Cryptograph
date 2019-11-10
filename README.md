@@ -8,6 +8,8 @@ This site is currently published on the following link:
 
 [CRYPTOGraphy](https://peggy535.github.io/Cryptograph/)
 
+This dashboard application has been built with to be responsive to any device type. Please also note, the signin and signup pages were not built to be functional. They were simply added to the project for a 'realism' factor.
+
 ## Conception
 
 Having an avid interest in Cryptocurrency, Options Trading and Data Analytics, I was drawn to this option for my milestone 2 project.
@@ -82,3 +84,20 @@ The project has made use of the following technologies;
 HTML5, CSS3, Bootstrap 4, Javascript, JQuery, D3.js, DC.js and Crossfilter.
 
 Further to this, [anno.js by Dan Fox](http://iamdanfox.github.io/anno.js/) was employed to provide the user an interacive tour of the dashboard.
+
+## Testing
+
+Testing for this project was conducted in the 'shoes' of an actual user. That is, all possible options and scenario's were completed as detailed below:
+
+1) Landing page
+..* Ensured the image, font size and sign-in/sign out buttons were rendered correctly for all responsive device types and orientations
+
+2) Dashboard Guided-Tour
+..* Ensured that the guided tour is functional on all device viewport sizes. Position of the tour messages were viewable no matter what device or orientation of screen. This was accomplished using Google Dev tools and running through the guided tour for all screen sizes and orientations
+
+3) Sign Out button
+..* The link was tested to ensure that no matter what device type, when this component was clicked, the correct landing page was rendered correctly.
+
+4) Overview of Coin: BTC
+..* The 
+
