@@ -17,10 +17,11 @@ var formatData = data.forEach(function(d){
 
 //User-defined data
 const costPerCoin = 4000; //Amount per coin in $
-const dateOfPurchase = new Date("2018-04-01");
+
 
 //Create a crossfilter object
 var ndx = crossfilter(data);
+var ndx_2 = crossfilter(data);
 
 var dateDimension = ndx.dimension(function(d){ return d.Date;});
 var dateGroup = dateDimension.group().reduceSum(function(d){return d.High});
@@ -29,13 +30,14 @@ var minDate = dateDimension.bottom(1)[0].Date;
 
 var volGroup = dateDimension.group().reduceSum(function(d){return d.Volume_BTC;});
 
-var profitDateDimension = dateDimension.filterRange([dateOfPurchase, maxDate]);
+var profitDateDimension = dateDimension.filterRange([new Date("2018-04-01"), maxDate]);
 var profitGroup = profitDateDimension.group().reduceSum(function(d){
                     return Math.floor( ((d.High - costPerCoin) / costPerCoin)  * 100 )});
 
 
-var scatterDimension = ndx.dimension(function(d){ return[d.Volume_BTC,d.High];});
-var scatterGroup = scatterDimension.group().reduceSum(function(d){return d.Date;});
+var scatterDimension = ndx_2.dimension(function(d){ return [d.Volume_BTC,d.High];});
+var scatterGroup = scatterDimension.group();
+
 
 
 var coinOverview = dc.lineChart("#data")
@@ -46,7 +48,7 @@ var coinOverview = dc.lineChart("#data")
                     .group(dateGroup)
                     .renderArea(true)
                     .yAxisLabel("Value/$")
-                    .x(d3.scaleTime().domain([minDate ,maxDate]))
+                    .x(d3.scaleTime().domain([minDate ,maxDate]).nice())
                     .colors("#1c9099")
                     .renderHorizontalGridLines(true)
                     .useViewBoxResizing(true);
@@ -73,7 +75,7 @@ var profitGraph = dc.lineChart('#profitData')
                     .brushOn(false)
                     .dimension(dateDimension)
                     .group(profitGroup)
-                    .x(d3.scaleTime().domain([dateOfPurchase, maxDate]).nice())
+                    .x(d3.scaleTime().domain([new Date("2018-04-01"), maxDate]).nice())
                     .colors("#756bb1")
                     .y(d3.scaleLinear().domain([-100, 400]))
                     .yAxisLabel("Profit levels/%")
@@ -101,12 +103,12 @@ var volGraph = dc.barChart("#tradeVolume")
                     volGraph.xAxis().ticks(4);
 
 var volHighScatter = dc.scatterPlot('#volHighScatter')
-                    .height(600)
-                    .width(600)
+                    .height(800)
+                    .width(800)
                     .margins({top:50,bottom:50,right:50,left:50})
                     .dimension(scatterDimension)
                     .group(scatterGroup)
-                    .x(d3.scaleLinear().domain([0, 130000]))
+                    .x(d3.scaleLinear().domain([0, 150000]))
                     .y(d3.scaleLinear().domain([0, 20000]))
                     .xAxisLabel("Volume of BTC traded/unit coin")
                     .yAxisLabel("Intraday High Value/$ per coin")
@@ -114,8 +116,8 @@ var volHighScatter = dc.scatterPlot('#volHighScatter')
                     .useViewBoxResizing(true)
                     .symbol(d3.symbolTriangle)
                     .symbolSize(5)
-                    .colors(d3.interpolatePlasma(0.8))
-                    .excludedOpacity(0.9);
+                    .clipPadding(10)
+                    .colors(d3.interpolatePlasma(0.8));
 
                     volHighScatter.xAxis().ticks(6);
                     

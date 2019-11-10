@@ -75,8 +75,12 @@ span.navbar-text, .nav-link {
     font-size: 2vh;
     color: #ffffff;
 }
-h1, h2, h3, table{
+h1, h2, h3, table {
     font-family: cy, sans-serif;
+}
+.jumbo-text {
+    font-family: cy, sans-serif;
+    font-size: 17px;
 }
 .table {
     width: 100%;

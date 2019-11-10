@@ -140,7 +140,7 @@ Testing for this project was conducted in the 'shoes' of an actual user. That is
 
 This project was saved the following repository on [Github Peggy535/Cryptograph](https://github.com/Peggy535/Cryptograph).
 
-There were not differences within configuration files nor any branches constructed.
+There were not differences within configuration files nor any branches constructed. 
 
 The projects site was deployed to the following site address, [click here](https://peggy535.github.io/Cryptograph/).
 
